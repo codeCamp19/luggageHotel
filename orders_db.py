@@ -46,7 +46,7 @@ class OrdersDB:
 
 
     # REGISTER 
-    def registerUser(self, name, email, phone_number, password):
-        data = [name, email, phone_number, password]
-        self.cursor.execute("INSERT INTO users (name, email, phone_number, password) VALUES (?,?,?,?)", data)
+    def registerUser(self, name, email, phoneNumber, password):
+        data = [name, email, phoneNumber, password]
+        self.cursor.execute("INSERT INTO users (name, email, phoneNumber, password) VALUES (?,?,?,?)", data)
         self.connection.commit()

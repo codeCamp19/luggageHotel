@@ -1,4 +1,8 @@
 
+#registerButton {
+    color: yellow;
+}
+
 .wholeGrid{
     display:grid;
     grid-auto-rows: 60px;

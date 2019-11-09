@@ -60,7 +60,7 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         # use if else statement to check if the key value exists. 
         name = parsed_body["name"][0] 
         email = parsed_body["email"][0]
-        phone_number = parsed_body["phone_number"][0]
+        phoneNumber = parsed_body["number"][0]
         password = parsed_body["password"][0]
 
         # Need to run hashing algorithm on the inserted password. 
@@ -69,7 +69,7 @@ class MyRequestHandler(BaseHTTPRequestHandler):
 
         # instantiate your class and insert
         db = OrdersDB()
-        db.registerUser(name,email,phone_number,hashed_password)
+        db.registerUser(name,email,phoneNumber,hashed_password)
         
         #respond to the client 
         self.send_response(200)
