@@ -30,16 +30,18 @@ registerButton.onclick = function() {
 var createOrderButton = document.querySelector("#createOrderButton");
 createOrderButton.onclick = function () {
     var newOrderAirport = document.querySelector("#airportBox").value
-    var newUserEmail = document.querySelector("#").value
-    var newUserPhoneNumber = document.querySelector("#registerNumber").value
-    var newUserPassword = document.querySelector("#registerPassword").value
+    var newOrderPickUp = document.querySelector("#pickUpBox").value
+    var newOrderDropOff = document.querySelector("#dropOffBox").value
+    var newOrderBagAmount = document.querySelector("#bagAmountBox").value
+    var newOrderComment = document.querySelector("#commentBox").value
 
-    var bodyStr = "name=" + encodeURIComponent(newUserName);
-    bodyStr += "&email=" + encodeURIComponent(newUserEmail);
-    bodyStr += "&phoneNumber=" + encodeURIComponent(newUserPhoneNumber);
-    bodyStr += "&password=" + encodeURIComponent(newUserPassword);
+    var bodyStr = "airport=" + encodeURIComponent(newOrderAirport);
+    bodyStr += "&pickUpDate" + encodeURIComponent(newOrderPickUp);
+    bodyStr += "&dropOffDate=" + encodeURIComponent(newOrderDropOff);
+    bodyStr += "&bagAmount=" + encodeURIComponent(newOrderBagAmount);
+    bodyStr += "&comment=" + encodeURIComponent(newOrderComment);
 
-    fetch("http://localhost:8080/users",{
+    fetch("http://localhost:8080/orders",{
         // requests parameters:
         method: "POST", 
         body: bodyStr,

@@ -132,7 +132,7 @@ h3{
 
 .submit1{
     grid-row: 17/18;
-    grid-column: 7/9;
+    grid-column: 6/8;
     background-color: black;
     color: white;
     font-size: 1rem;
@@ -161,7 +161,7 @@ h3{
 }
 
 .smallPrint{
-    grid-column: 7/10;
+    grid-column: 6/10;
     grid-row: 18/19;
     font-size: .75rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -169,23 +169,46 @@ h3{
     margin-left: 5px; 
 }
 
+
+/*registration*/
+
 .headofregistration {
     grid-column: 6/7;
-    grid-row: 20/21;
+    grid-row: 22/23;
     color: black;
     padding-left: 20px;
 }
 
 .smallPrompt2 {
     grid-column: 5/9;
-    grid-row: 22/23;
+    grid-row: 23/24;
     margin:0;
     padding-left: 20px;
 }
 
+.name{
+    grid-column: 5/6;
+    grid-row: 24/25;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;
+   
+}
+
+
+
 .nameInput {
     grid-column: 5/9;
     grid-row: 25/26;
+}
+
+.email{
+    grid-column: 5/6;
+    grid-row: 26/27;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;
+    
 }
 
 .emailInput1 {
@@ -197,14 +220,41 @@ h3{
     grid-column: 5/9;
     grid-row: 29/30;
 }
+
+.phone{
+    grid-column: 5/6;
+    grid-row: 28/29;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;
+    
+}
+
+
 .passwordInput1 {
     grid-column: 5/9;
     grid-row: 31/32;
 }
 
+.password{
+    grid-column: 5/6;
+    grid-row:30/31;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;  
+}
+
 .verifyPassInput {
     grid-column: 5/9;
     grid-row: 33/34;
+}
+
+.verifypassword{
+    grid-column: 5/8;
+    grid-row:32/33;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;  
 }
 
 .submit2{
