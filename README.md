@@ -1,2 +1,2 @@
-# luggageHotel
-App to drop off and pick up luggage in densely populated airport cities
+# orderHotel
+App to drop off and pick up order in densely populated airport cities
