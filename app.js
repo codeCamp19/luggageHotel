@@ -50,24 +50,25 @@ createOrderButton.onclick = function () {
         }
     }).then(function (response) {
         // reload the page
-        // displayData();
+        displayData();
     })
     // displayData();
 }
 
 
-// function displayData() {
-// 	fetch("http://localhost:8080/jobs").then(function (response){
-// 		response.json().then(function(data){
-// 			console.log("data received from the server: ", data);
+function displayData() {
+	fetch("http://localhost:8080/jobs").then(function (response){
+		response.json().then(function(data){
+			console.log("data received from the server: ", data);
 
-// 			var jobsList = document.querySelector("#jobs");
-// 			jobsList.innerHTML = " ";
-// 			data.forEach(function (job) {
-//             }
-//         }
-//     }
-// }
+			var jobsList = document.querySelector("#jobs");
+			jobsList.innerHTML = " ";
+			data.forEach(function (job) {
+			
+			});
+		});
+	});
+};
 
 
 
