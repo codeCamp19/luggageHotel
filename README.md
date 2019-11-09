@@ -1,5 +1,4 @@
-# My Project
-## Luggage Hotel
+# Luggage Hotel
 ## Resource
 
 **LUGGAGE**
