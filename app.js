@@ -23,5 +23,33 @@ registerButton.onclick = function() {
         // reload the page
         // displayData();
     })
-
 }
+
+
+
+var createOrderButton = document.querySelector("#createOrderButton");
+createOrderButton.onclick = function () {
+    var newOrderAirport = document.querySelector("#airportBox").value
+    var newUserEmail = document.querySelector("#").value
+    var newUserPhoneNumber = document.querySelector("#registerNumber").value
+    var newUserPassword = document.querySelector("#registerPassword").value
+
+    var bodyStr = "name=" + encodeURIComponent(newUserName);
+    bodyStr += "&email=" + encodeURIComponent(newUserEmail);
+    bodyStr += "&phoneNumber=" + encodeURIComponent(newUserPhoneNumber);
+    bodyStr += "&password=" + encodeURIComponent(newUserPassword);
+
+    fetch("http://localhost:8080/users",{
+        // requests parameters:
+        method: "POST", 
+        body: bodyStr,
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+    }).then(function (response) {
+        // reload the page
+        // displayData();
+    })
+}
+
+
