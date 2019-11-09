@@ -8,21 +8,21 @@
 
 Attributes:
 
-# USER REGISTRATION
+## USER REGISTRATION
 * name (string)
 * email (string)
 * phone (string)
 * password (string)
 
-# CREATE ORDER
+## CREATE ORDER
 * airport (string)
 * bagAmount (string)
 * pickUpDate (string)
 * dropOffDate (string)
 
-## Schema
+# Schema
 
-# REGISTRATION
+## REGISTRATION
 ```sql
 CREATE TABLE users (
 id INTEGER PRIMARY KEY,
@@ -31,7 +31,7 @@ email TEXT,
 phone TEXT,
 password TEXT;
 ```
-# CREATE ORDER
+## CREATE ORDER
 ```sql
 CREATE TABLE orders (
 id INTEGER PRIMARY KEY,
