@@ -4,8 +4,6 @@
 **LUGGAGE**
 
 
-![Image of Yaktocat](https://github.com/dsu-cit-csweb3200/f19-resourceful-ferus2306/blob/master/images/example.jpg)
-
 Attributes:
 
 ## USER REGISTRATION
