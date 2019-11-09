@@ -4,8 +4,7 @@
 
 .logo{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #F5D44F;
-    background-color:#f2f2f2;
+    color: #000000;
     margin:0;
     padding-top: 20px;
 }
@@ -47,24 +46,14 @@ nav ul{
 }
 
 
-/*words in the substitute section*/
-.aboutSubs{
-    grid-column: 8/12;
-    grid-row: 3/4;
+/*words underneath the logo of luggageHotel*/
+.smallPrompt{
     font-family:tarzana-narrow, sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color:#707070;
     padding-left: 20px;
 
-}
-
-.covered{
-    grid-column: 8/14;
-    grid-row: 5/6;
-    padding-left: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2.25rem;
 }
 
 .substitutePrompt{
