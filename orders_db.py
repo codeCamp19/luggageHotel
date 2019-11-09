@@ -16,7 +16,7 @@ class OrdersDB:
 
     def insertOrder(self, airport, bagAmount, pickUpDate, dropOffDate, comment):
         data = [airport, bagAmount, pickUpDate, dropOffDate, comment]
-        self.cursor.execute("INSERT INTO orders (airport, bagAmount, pickUpDate, dropOffDate ) VALUES (?,?,?,?,?)", data)    
+        self.cursor.execute("INSERT INTO orders (airport, bagAmount, pickUpDate, dropOffDate, comment ) VALUES (?,?,?,?,?)", data)    
         self.connection.commit()
 
     def getOrders(self):
@@ -40,6 +40,13 @@ class OrdersDB:
 
     def updateOneOrder(self, airport, bagAmount, pickUpDate, dropOffDate, order_id):
         data = [airport, bagAmount, pickUpDate, dropOffDate, order_id]
-        self.cursor.execute("UPDATE jobs SET airport = ?, bagAmount = ?, pickUpDate = ?, dropOffDate = ? WHERE id = ?", data)
+        self.cursor.execute("UPDATE orders SET airport = ?, bagAmount = ?, pickUpDate = ?, dropOffDate = ? WHERE id = ?", data)
         self.connection.commit()
 
+
+
+    # REGISTER 
+    def registerUser(self, name, email, phone_number, password):
+        data = [name, email, phone_number, password]
+        self.cursor.execute("INSERT INTO users (name, email, phone_number, password) VALUES (?,?,?,?)", data)
+        self.connection.commit()
