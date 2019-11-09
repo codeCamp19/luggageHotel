@@ -47,7 +47,7 @@
 nav{
     grid-column: 9/14;
     background-color: #000000;
-    font-family: ta*rzana-narrow, sans-serif;
+    font-family: tarzana-narrow, sans-serif;
     font-weight: 400;
     font-size: 2rem;
     font-style: normal;
@@ -92,6 +92,7 @@ nav ul{
 /*Signin area*/
 
 h1{
+    margin:0;
     font-size: 2.5rem;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -200,7 +201,7 @@ h3{
 
 .submit2{
     margin: 5px;
-    grid-column: 6/8;
+    grid-column: 6/7;
     grid-row:34/35; 
     background-color: black;
     color: white;
@@ -220,19 +221,22 @@ h3{
 }
 
 h4{
-    font-size: .5rem;
+    font-size: .75rem;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2{
+h2{ 
+
     font-size: 1rem; 
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h5{
-    font-size: .5rem;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    font-size: .75rem;
     color: blue;
     text-decoration: underline;
 }
@@ -255,7 +259,7 @@ h5{
 
 .date4{
     grid-column: 3/4;
-    grid-row:  45/46;
+    grid-row:  44/45;
 }
 
 .airportName1{
@@ -265,5 +269,121 @@ h5{
 
 .airportName2{
     grid-column: 3/7;
-    grid-row: ;
+    grid-row: 41/42 ;
+}
+
+.airportName3{
+    grid-column: 3/7;
+    grid-row: 43/44 ;
+}
+
+.airportName4{
+    grid-column: 3/7;
+    grid-row: 45/46 ;
+}
+
+.edit1{
+    grid-column: 6/7;
+    grid-row: 38/39;
+}
+
+.edit2{
+    grid-column: 6/7;
+    grid-row: 40/41;
+}
+
+.edit3{
+    grid-column: 6/7;
+    grid-row: 42/43;
+}
+
+.edit4{
+    grid-column: 6/7;
+    grid-row: 44/45;
+}
+
+.borderofordersummary{
+    grid-column: 2/7;
+    grid-row: 36/46;
+    background-color: rgba(181, 180, 180, 0.459);
+    margin-left: 40px;
+
+}
+
+.createTrip{
+    grid-column: 8/13;
+    grid-row: 36/37;
+}
+
+h6{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.airport{
+    grid-column: 8/12;
+    grid-row: 38/39;
+    background-color: black;
+    margin:0;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.airportInput{
+    grid-column: 13/14;
+    grid-row: 38/39;
+    color:black;
+}
+
+
+.pickup{
+    grid-column: 8/12;
+    grid-row: 40/41;
+    background-color:black;
+    margin:0;
+    padding:0;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.pickupInput{
+    grid-column: 13/14;
+    grid-row: 40/41;
+    color: black;
+}
+
+.drop-off{
+    grid-column: 8/12;
+    grid-row: 42/43;
+    background-color: black;
+    margin:0;
+    padding:0;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.dropoffInput{
+    grid-column: 13/14;
+    grid-row: 42/43;
+    color:black;
+}
+
+.ofbags{
+    grid-column: 8/12;
+    grid-row: 44/45;
+    background-color: black;
+    margin:0;
+    padding:0;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.ofbagsInput{
+    grid-column: 13/14;
+    grid-row: 44/45;
+    color:black;
+}
+
+.comments{
+    
 }

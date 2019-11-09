@@ -60,7 +60,7 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         # use if else statement to check if the key value exists. 
         name = parsed_body["name"][0] 
         email = parsed_body["email"][0]
-        phoneNumber = parsed_body["number"][0]
+        phoneNumber = parsed_body["phoneNumber"][0]
         password = parsed_body["password"][0]
 
         # Need to run hashing algorithm on the inserted password. 
