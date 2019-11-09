@@ -36,9 +36,9 @@ createOrderButton.onclick = function () {
     var newOrderComment = document.querySelector("#commentBox").value
 
     var bodyStr = "airport=" + encodeURIComponent(newOrderAirport);
-    bodyStr += "&pickUpDate" + encodeURIComponent(newOrderPickUp);
-    bodyStr += "&dropOffDate=" + encodeURIComponent(newOrderDropOff);
     bodyStr += "&bagAmount=" + encodeURIComponent(newOrderBagAmount);
+    bodyStr += "&pickUpDate=" + encodeURIComponent(newOrderPickUp);
+    bodyStr += "&dropOffDate=" + encodeURIComponent(newOrderDropOff);
     bodyStr += "&comment=" + encodeURIComponent(newOrderComment);
 
     fetch("http://localhost:8080/orders",{
@@ -52,6 +52,22 @@ createOrderButton.onclick = function () {
         // reload the page
         // displayData();
     })
+    // displayData();
 }
+
+
+// function displayData() {
+// 	fetch("http://localhost:8080/jobs").then(function (response){
+// 		response.json().then(function(data){
+// 			console.log("data received from the server: ", data);
+
+// 			var jobsList = document.querySelector("#jobs");
+// 			jobsList.innerHTML = " ";
+// 			data.forEach(function (job) {
+//             }
+//         }
+//     }
+// }
+
 
 
