@@ -45,7 +45,7 @@ comment TEXT;
 
 Name                           | Method | Path
 -------------------------------|--------|------------------
-Retrieve  collection | GET    | /jobs
+Retrieve  collection | GET    | /orders
 Retrieve order member     | GET    | /orders/*\<id\>*
 Create order member       | POST   | /orders/
 Update order member       | PUT    | /orders/*\<id\>*

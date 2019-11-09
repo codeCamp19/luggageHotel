@@ -323,7 +323,13 @@ h5{
     border-style: solid;
     border-width: 5px;
     margin-left: 40px;
+}
 
+#displayOrders {
+    grid-column: 2/9;
+    grid-row: 37/46;
+    height: 50px;
+    
 }
 
 .createTrip{
@@ -423,4 +429,17 @@ h6{
     color: white;
     background-color: black;
     font-size: 1rem;
+}
+
+
+li{
+	list-style-type: none;
+	margin-bottom: 10px;
+	
+	text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 23px;
+    border: solid black;
+    width: 345px;
+    margin-left: 160px;
 }
